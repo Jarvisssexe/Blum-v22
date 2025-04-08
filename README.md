@@ -24,15 +24,15 @@ nano config.json
 ```json
 {
   "game": true,
-  "daily": true,
-  "task": true,
-  "farming": true,
+  "daily": false,
+  "task": false,
+  "farming": false,
   "low_point": 260,
   "high_point": 280,
   "thread": 1,
   "proxy": false,
-  "delay_account_switch": 10,
-  "delay_loop": 3000
+  "delay_account_switch": 1,
+  "delay_loop": 3
 }
 ```
 3. **ADD ACCOUNTS**
