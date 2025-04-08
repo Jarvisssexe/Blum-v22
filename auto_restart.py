@@ -38,5 +38,5 @@ def run_script():
         print("main.py has started. Restarting in 2 minutes...")
         time.sleep(120)  # Sleep for 2 minutes (120 seconds)
 
-if name == "main":
+if name == "main":  # Corrected line
     run_script()
