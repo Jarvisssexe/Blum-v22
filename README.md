@@ -13,7 +13,7 @@
 1. **Installation**
    ```bash
    git clone https://github.com/Jarvisssexe/Blum-v22.git
-   cd blum-v2
+   cd blum-v22
    pip install -r requirements.txt
    ```
 2. **Configuration**
