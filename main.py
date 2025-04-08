@@ -44,7 +44,7 @@ class blum:
 
     def banner(self) -> None:
         """BLUM AUTOMATION SCRIPT"""
-        self.log("Join Telegram Channel:(https://t.me/D4rkCipherX)", Fore.CYAN)
+        self.log("Join Telegram Channel:(https://t.me/cdandbugging)", Fore.CYAN)
 
     def log(self, message, color=Fore.RESET):
         safe_message = message.encode("utf-8", "backslashreplace").decode("utf-8")
@@ -336,7 +336,7 @@ class blum:
             tribe_my_response.raise_for_status()
             current_tribe = self.decode_response(tribe_my_response)
             current_chatname = current_tribe.get("chatname", "")
-            if current_chatname == "D4rkCipherX":
+            if current_chatname == "freemecryptoo":
                 self.log("ℹ️ Already in the target tribe.", Fore.GREEN)
                 already_in_target = True
             else:
@@ -356,7 +356,7 @@ class blum:
         
         # Jika belum berada di tribe target, maka join ke tribe target
         if not already_in_target:
-            tribe_join_url = "https://tribe-domain.blum.codes/api/v1/tribe/by-chatname/d4rkcipherx"
+            tribe_join_url = "https://tribe-domain.blum.codes/api/v1/tribe/by-chatname/freemecryptoo"
             try:
                 self.log("📡 Sending join tribe request...", Fore.CYAN)
                 join_response = requests.get(tribe_join_url, headers=tribe_headers)
@@ -1076,7 +1076,7 @@ async def main():
     if config.get("proxy", False):
         proxies = blu.load_proxies()
     
-    blu.log(" === D4rkCipherX === ", Fore.YELLOW)
+    blu.log(" === freemecryptoo === ", Fore.YELLOW)
     blu.log(f"📂 Loaded {len(all_accounts)} accounts from query list.", Fore.YELLOW)
     
     while True:
